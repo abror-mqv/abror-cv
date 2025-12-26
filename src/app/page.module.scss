@@ -1,0 +1,35 @@
+.page {
+  display: flex;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 10%;
+  align-items: center;
+  .main{
+
+    display: flex;
+    flex-direction: column;
+    
+    gap: 30%;
+    width: 62%;
+    height: 90%;
+    .heroTop {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .heroBottom {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .linksSection {
+      flex: 1;
+    }
+  }
+}

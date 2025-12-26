@@ -1,0 +1,47 @@
+[
+    {
+        "title": "optal.ru",
+        "description": "A cutting-edge web application built with modern technologies.",
+        "role": "Full Stack Developer",
+        "githubUrl": "https://github.com/example/optal-ru",
+        "liveUrl": "https://optal.ru",
+        "is_open_source": true,
+        "image": "/images/optal-ru.png"
+    },
+    {
+        "title": "Another Project",
+        "description": "Another great project.",
+        "role": "Frontend Developer",
+        "githubUrl": "https://github.com/example/another-project",
+        "liveUrl": "https://another-project.example.com",
+        "is_open_source": false,
+        "image": "/images/another-project.png"
+    },
+    {
+        "title": "Third Project",
+        "description": "A third project.",
+        "role": "Backend Developer",
+        "githubUrl": "https://github.com/example/third-project",
+        "liveUrl": "https://third-project.example.com",
+        "is_open_source": true,
+        "image": "/images/third-project.png"
+    },
+    {
+        "title": "Fourth Project",
+        "description": "A fourth project.",
+        "role": "DevOps Engineer",
+        "githubUrl": "https://github.com/example/fourth-project",
+        "liveUrl": "https://fourth-project.example.com",
+        "is_open_source": false,
+        "image": "/images/fourth-project.png"
+    },
+    {
+        "title": "Fifth Project",
+        "description": "A fifth project.",
+        "role": "Mobile Developer",
+        "githubUrl": "https://github.com/example/fifth-project",
+        "liveUrl": "https://fifth-project.example.com",
+        "is_open_source": true,
+        "image": "/images/fifth-project.png"
+    }
+]

@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+}
+
+.button{
+    border: 1px solid rgba(255,255,255,0.2);
+    background: transparent;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    &:hover{
+        transform: translateY(-1px);
+        border-color: rgba(255,255,255,0.35);
+        background: rgba(255,255,255,0.06);
+    }
+    &:active{
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "certificates": [
+        {
+            "id": 1,
+            "title": "AWS Certified Solutions Architect - Associate",
+            "issuer": "Amazon Web Services",
+            "date": "2024-06-15",
+            "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+            "status": "verified"
+        },
+        {
+            "id": 2,
+            "title": "Google Cloud Professional Cloud Architect",
+            "issuer": "Google Cloud",
+            "date": "2024-08-20",
+            "url": "https://cloud.google.com/certification/cloud-architect",
+            "status": "in_progress"
+        }
+    ]
+}

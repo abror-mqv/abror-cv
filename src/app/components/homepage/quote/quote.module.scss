@@ -1,0 +1,23 @@
+.quote{
+    height: 70px;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    .quoteText{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .authorText{
+        font-size: 1rem;
+        color: #ffffff99;
+    }
+    .invisibleCursor {
+        visibility: hidden;
+    }
+}
