@@ -4,7 +4,7 @@ import Image from 'next/image'
 const ProjectCard = ({ project }: { project: any }) => {
     return (
         <article key={project.title} className={styles.card}>
-            <Image src={project.image} alt={project.title} width={440} height={248} />
+            <Image src={project.image} alt={project.title} width={660} height={371} style={{ objectFit: 'cover' }} priority />
         </article>
     )
 }
