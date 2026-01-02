@@ -1,9 +1,11 @@
 .header{
+    position: relative;
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 12px;
     padding: 12px 0;
+    z-index: 9999;
 }
 
 .button{

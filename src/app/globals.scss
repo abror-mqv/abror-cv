@@ -30,3 +30,27 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: flex-end;
+  font-size: 18px;
+  // background: #444;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

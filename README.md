@@ -1,6 +1,7 @@
 This is the source code of my personal website.
+You can use it as a template for your purpose with no attribution required.
 
-Built with Next.js and TypeScript.
+Built with Next.js v16 and TypeScript.
 
 ## ToDo
  - add russian language

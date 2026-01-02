@@ -1,47 +1,82 @@
 [
     {
         "title": "optal.ru",
-        "description": "A cutting-edge web application built with modern technologies.",
-        "role": "Full Stack Developer",
-        "githubUrl": "https://github.com/example/optal-ru",
-        "liveUrl": "https://optal.ru",
-        "is_open_source": true,
-        "image": "/images/optal-ru.png"
+        "description": "Local marketplace i took as a startup project but it didnt work out. The goal was to create a platform for Kyrgyz sewing manufacturers to sell their products to the CIS market",
+        "role": "Full Stack Developer/Owner",
+        "githubUrl": "https://github.com/abror-mqv/server-optal",
+        "liveUrl": "https://optal.vercel.app",
+        "is_open_source": false,
+        "image": "/projects/optal.png"
     },
     {
-        "title": "Another Project",
-        "description": "Another great project.",
+        "title": "imacode.ru",
+        "description": "Single-paged application for a local programming school.",
         "role": "Frontend Developer",
-        "githubUrl": "https://github.com/example/another-project",
-        "liveUrl": "https://another-project.example.com",
-        "is_open_source": false,
-        "image": "/images/another-project.png"
-    },
-    {
-        "title": "Third Project",
-        "description": "A third project.",
-        "role": "Backend Developer",
-        "githubUrl": "https://github.com/example/third-project",
-        "liveUrl": "https://third-project.example.com",
+        "githubUrl": "https://github.com/abror-mqv/imacode-frontend",
+        "liveUrl": "https://imacode-frontend.vercel.app/",
         "is_open_source": true,
-        "image": "/images/third-project.png"
+        "image": "/projects/imacode.png"
     },
     {
-        "title": "Fourth Project",
-        "description": "A fourth project.",
-        "role": "DevOps Engineer",
-        "githubUrl": "https://github.com/example/fourth-project",
-        "liveUrl": "https://fourth-project.example.com",
-        "is_open_source": false,
-        "image": "/images/fourth-project.png"
-    },
-    {
-        "title": "Fifth Project",
-        "description": "A fifth project.",
-        "role": "Mobile Developer",
-        "githubUrl": "https://github.com/example/fifth-project",
-        "liveUrl": "https://fifth-project.example.com",
+        "title": "aimak-admin",
+        "description": "Admin panel for a local company to manage ads users and orders",
+        "role": "Full Stack Developer/Owner",
+        "githubUrl": "https://github.com/abror-mqv/aimak996-chief",
+        "liveUrl": "http://176.126.164.86:3001/dashboard",
         "is_open_source": true,
-        "image": "/images/fifth-project.png"
+        "image": "/projects/aimak-admin.png"
+    },
+    {
+        "title": "aimak-web",
+        "description": "Website for a local company. The main goal was just to pass the AppStore requirements for our apps",
+        "role": "Frontend Developer",
+        "githubUrl": "https://github.com/abror-mqv/aimak996web",
+        "liveUrl": "https://aimak996.vercel.app/",
+        "is_open_source": true,
+        "image": "/projects/aimak-web.png"
+    },
+    {
+        "title": "Nookat 996",
+        "description": "Local e-bay alternative for Kyrgyzstan. Yeah i developed it all by myself using Flutter, Django Rest Framework and React as a admin-panel. You can download it rn",
+        "role": "Mobile Developer/Owner",
+        "liveUrl": "https://aimak996.vercel.app/",
+        "is_open_source": false,
+        "image": "/projects/nookat.png"
+    },
+     {
+        "title": "AZV-Coffee",
+        "description": "The loyalty app for a coffeshop that did not work out. Now it is a free template if you want to create your white-label loyalty app. It is not available in the app store or google play but i can drop you the .apk file. I was just playing with flutter",
+        "role": "Mobile Developer/Owner",
+        "githubUrl": "https://github.com/abror-mqv/azvcoffe_client",
+        "is_open_source": true,
+        "image": "/projects/azv-coffee.png"
+    },
+    {
+        "title": "AZV-Web-Admin",
+        "description": "The admin panel for the loyalty app for a coffeshop that did not work out. Now it is a free template if you want to create your white-label loyalty app",
+        "role": "Full Stack Developer/Owner",
+        "githubUrl": "https://github.com/abror-mqv/AzvCoffeeAdmin",
+        "liveUrl": "http://176.126.164.86:3039/",
+        "is_open_source": true,
+        "image": "/projects/azv-web.png"
+    },
+    {
+        "title": "AGK-Media",
+        "description": "The website of the company i've been working with that does marketing in Russia",
+        "role": "Frontend Developer",
+        "liveUrl": "https://agk-media.ru",
+        "is_open_source": false,
+        "image": "/projects/agk-media.png"
+    },
+    {
+        "title": "Imagocos",
+        "description": "The website of the company i've been working with that does custom software development in CIS region",
+        "role": "Frontend Developer",
+        "liveUrl": "https://imagocos.vercel.app/",
+        "is_open_source": false,
+        "image": "/projects/imagocos.png"
     }
+
 ]
+
+
