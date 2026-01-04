@@ -19,19 +19,33 @@ export default function TimelinePage() {
       <header className={styles.header}>
         <p className={styles.title}>Experience Timeline</p>
       </header>
+      <div className={styles.container}>
+        <div className={styles.explainer}>
+          <div className={styles.axis}>
+            <span className={styles.axisLabel}>Recent</span>
+            <div className={styles.axisLine} />
+            <span className={styles.axisLabelMuted}>Earlier</span>
+          </div>
 
-      <ol className={styles.list}>
-        {visible.map((item, idx) => (
-          <Card key={idx} data={item} />
-        ))}
-      </ol>
-      {hasMore ? (
-        <div className={styles.controls}>
-          <button className={styles.showMore} onClick={() => setShowAll(true)}>
-            Show more
-          </button>
         </div>
-      ) : null}
+        <div className={styles.content}>
+          <ol className={styles.list}>
+            {visible.map((item, idx) => (
+              <Card key={idx} data={item} />
+            ))}
+          </ol>
+          {hasMore ? (
+            <div className={styles.controls}>
+              <button className={styles.showMore} onClick={() => setShowAll(true)}>
+                Show more
+              </button>
+            </div>
+          ) : null}
+        </div>
+
+      </div>
+
+
     </main>
   );
 }

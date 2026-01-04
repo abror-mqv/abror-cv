@@ -6,6 +6,8 @@ Built with Next.js v16 and TypeScript.
 [Live Demo](https://abror-cv.vercel.app/)
 
 ## ToDo
+ - apply button triggers to serve user's actions
+ - make pdf file downloadable
  - customize fonts
  - add job exp timeline
  - add russian language

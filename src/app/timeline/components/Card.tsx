@@ -5,17 +5,18 @@ const Card = ({ data }: { data: any }) => {
     return (
         <div className={styles.card}>
             <div className={styles.card_date}>
-                <div>
-                    <p>
-                        {data.date_start}
-                    </p>
-                    <p>
-                        {data.date_end}
-                    </p>
-                </div>
                 <p>
                     {data.date_sum}
                 </p>
+                <div>                    
+                    <p>
+                        {data.date_end}
+                    </p>
+                    <p>
+                        {data.date_start}
+                    </p>
+                </div>
+
 
             </div>
             <div className={styles.card_content}>
