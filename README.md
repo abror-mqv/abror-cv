@@ -6,6 +6,7 @@ Built with Next.js v16 and TypeScript.
 [Live Demo](https://abror-cv.vercel.app/)
 
 ## ToDo
+ - customize fonts
  - add job exp timeline
  - add russian language
  - add french language

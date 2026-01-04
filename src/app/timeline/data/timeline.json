@@ -1,0 +1,71 @@
+[
+    {
+        "my_role": "A Student",
+        "employer_title": "IT-Academy Kyrgyzstan",
+        "employer_description": "Certified IT courses based in Bishkek, Kyrgyzstan",
+        "employer_link": "https://www.linkedin.com/company/zettasoft-io/about/",
+        "my_responsbilities": [
+            "Accomplished coursework in web development course using React",
+            "Assisted the mentor in conducting lab sessions and answering student questions"
+        ],
+        "date_start": "March, 2021",
+        "date_end": "Dec, 2021",
+        "date_sum": "9 months"
+    },
+    {
+        "my_role": "Frontend Developer",
+        "employer_title": "ZettaSoft.io",
+        "employer_description": "Local software development company focused on web and mobile applications.",
+        "employer_link": "https://www.linkedin.com/company/zettasoft-io/about/",
+        "my_responsbilities": [
+            "Assisted in developing responsive web applications using React",
+            "Collaborated with senior developers to debug and fix frontend issues.",
+            "Learnt to work with redux and next.js"
+        ],
+        "date_start": "Dec, 2021",
+        "date_end": "May, 2022",
+        "date_sum": "5 months"
+    },
+    {
+        "my_role": "Frontend Developer",
+        "employer_title": "AGK-Media",
+        "employer_description": "Russia based marketing agency",
+        "employer_link": "https://agk-media.ru/",
+        "my_responsbilities": [
+            "I built single paged web applications for us and our cusomers",
+            "I have integrated content management using wordpress"
+        ],
+        "date_start": "May, 2022",
+        "date_end": "Dec, 2022",
+        "date_sum": "8 months"
+    },
+    {
+        "my_role": "System Administrator / IT Support",
+        "employer_title": "Freelance",
+        "employer_description": "Provided system administration and IT support for multiple businesses (call centers, warehouses, factories) in Bishkek.",
+        "my_responsbilities": [
+            "This job helped me to understand what type of software is really needed in small businesses",
+            "Installed and maintained workstations and office IT infrastructure",
+            "Deployed and configured CRM systems",
+            "Trained staff and provided ongoing technical support",
+            "Supported clients across various industries (call centers, warehouses, manufacturing)"
+        ],
+        "date_start": "March, 2023",
+        "date_end": "Fed, 2025",
+        "date_sum": "23 months"
+    },
+    {
+        "my_role": "FullStack Developer",
+        "employer_title": "Imagocos",
+        "employer_description": "Custom software outsourcing company based in Bishkek, Kyrgyzstan",
+        "employer_link": "https://imagocos.vercel.app/",
+        "my_responsbilities": [
+            "Developed full-stack web applications using React, Django, and Postgres",
+            "Implemented RESTful APIs and integrated third-party services",
+            "Assisted our business analysts in understanding technical constraints and possibilities"
+        ],
+        "date_start": "March, 2025",
+        "date_end": "Dec, 2025",
+        "date_sum": "10 months"
+    }
+]

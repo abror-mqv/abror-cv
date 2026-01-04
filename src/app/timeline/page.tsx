@@ -1,3 +1,37 @@
+'use client'
+
+import Header from '../components/header';
+import { useMemo, useState } from 'react';
+import styles from './Timeline.module.scss';
+import Card from './components/Card';
+import timeline from './data/timeline.json';
+
 export default function TimelinePage() {
-  return <main />;
+  const items = useMemo(() => [...timeline].reverse(), []);
+  const [showAll, setShowAll] = useState(false);
+  const initialCount = 2;
+  const visible = showAll ? items : items.slice(0, initialCount);
+  const hasMore = items.length > initialCount && !showAll;
+
+  return (
+    <main className={styles.page}>
+      <Header />
+      <header className={styles.header}>
+        <p className={styles.title}>Experience Timeline</p>
+      </header>
+
+      <ol className={styles.list}>
+        {visible.map((item, idx) => (
+          <Card key={idx} data={item} />
+        ))}
+      </ol>
+      {hasMore ? (
+        <div className={styles.controls}>
+          <button className={styles.showMore} onClick={() => setShowAll(true)}>
+            Show more
+          </button>
+        </div>
+      ) : null}
+    </main>
+  );
 }
