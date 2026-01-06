@@ -27,7 +27,7 @@ const Card = ({ data }: { data: any }) => {
                 <p>{data.employer_description}</p>
                 <ul>
                     {data.my_responsbilities.map((el: string, index: number) => {
-                        return <li key={index}> {el}</li>;
+                        return <li key={index}>{el}</li>;
                     })}
                 </ul>
             </div>

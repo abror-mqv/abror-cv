@@ -9,7 +9,6 @@ Built with Next.js v16 and TypeScript.
  - apply button triggers to serve user's actions
  - make pdf file downloadable
  - customize fonts
- - add job exp timeline
  - add russian language
  - add french language
  - add responsive design for mobile devices

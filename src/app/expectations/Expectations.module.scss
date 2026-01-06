@@ -1,0 +1,59 @@
+.page{
+    min-height: 100vh;
+    padding: 24px clamp(18px, 5vw, 72px);
+    background: var(--background-color);
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .content{
+        max-width: 660px;
+        article{
+            margin-bottom: 32px;
+        }
+        h2{
+            padding: 12px;
+            width: fit-content;
+            position: relative;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            color: var(--font-color);
+            text-transform: uppercase;
+            overflow: hidden;
+            isolation: isolate;
+        }
+        h2::before,
+        h2::after{
+            content: attr(data-text);
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            mix-blend-mode: screen;
+            color: var(--accent-color);
+            text-shadow: 2px 0 var(--accent-color);
+            animation: glitchShift 1100ms infinite ease-in-out;
+        }
+        h2::after{
+            text-shadow: -2px 0 color-mix(in srgb, var(--accent-color) 80%, #00ffff 20%);
+            animation: glitchShift2 950ms infinite ease-in-out;
+        }
+    }
+}
+
+@keyframes glitchShift{
+    0%{ transform: translate(0,0); clip-path: inset(0 0 15% 0); }
+    20%{ transform: translate(-1px, -1px); clip-path: inset(10% 0 40% 0); }
+    40%{ transform: translate(1px, 1px); clip-path: inset(35% 0 25% 0); }
+    60%{ transform: translate(-2px, 1px); clip-path: inset(60% 0 5% 0); }
+    80%{ transform: translate(2px, -1px); clip-path: inset(15% 0 55% 0); }
+    100%{ transform: translate(0,0); clip-path: inset(0 0 15% 0); }
+}
+
+@keyframes glitchShift2{
+    0%{ transform: translate(0,0); clip-path: inset(60% 0 0 0); }
+    20%{ transform: translate(2px, 1px); clip-path: inset(20% 0 30% 0); }
+    40%{ transform: translate(-1px, -1px); clip-path: inset(50% 0 10% 0); }
+    60%{ transform: translate(1px, 2px); clip-path: inset(5% 0 65% 0); }
+    80%{ transform: translate(-2px, -2px); clip-path: inset(30% 0 20% 0); }
+    100%{ transform: translate(0,0); clip-path: inset(60% 0 0 0); }
+}

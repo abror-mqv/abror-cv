@@ -37,7 +37,7 @@ export default function TimelinePage() {
           {hasMore ? (
             <div className={styles.controls}>
               <button className={styles.showMore} onClick={() => setShowAll(true)}>
-                Show more
+                Show all
               </button>
             </div>
           ) : null}
