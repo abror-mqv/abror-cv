@@ -47,15 +47,9 @@ export default function ProjectsPage() {
 
   return (
     <div className={styles.page}>
-      <Header />
+      <Header title="Projects" />
       <main className={styles.main} onWheel={handleWheel}>
-        <div className={styles.topline}>
-          <div>
-            {/* <p className={styles.kicker}>Selected work</p> */}
-            <h1 className={styles.title}>Projects</h1>
-          </div>
-          {/* <span className={styles.hint}>Shipped with focus on clarity and delivery.</span> */}
-        </div>
+        
         <div className={styles.content}>
           <Info data={currentProject}/>
          

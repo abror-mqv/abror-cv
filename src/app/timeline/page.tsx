@@ -15,10 +15,7 @@ export default function TimelinePage() {
 
   return (
     <main className={styles.page}>
-      <Header />
-      <header className={styles.header}>
-        <p className={styles.title}>Experience Timeline</p>
-      </header>
+      <Header title="Experience Timeline" />
       <div className={styles.container}>
         <div className={styles.explainer}>
           <div className={styles.axis}>

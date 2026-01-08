@@ -1,45 +1,55 @@
 import styles from './Expectations.module.scss';
 import Header from '../components/header';
+import Quote from '../components/homepage/quote';
+import Link from 'next/link';
 
 export default function Expectations() {
   return (
     <main className={styles.page}>
-      <Header />
+      <Header title="About me" />
       <div className={styles.content}>
         <article>
-          <h2>
-            Who i am
+          <h2 className={styles.heading} tabIndex={0}>
+            <span className={styles.headingMain}>Who I am</span>
+            <span className={styles.headingHelp}>I forgot to introduce myself</span>
           </h2>
           <p>
-            I’m a full-stack software engineer with a strong focus on building practical, production-ready systems.
-            Over the years, I’ve worked on CRM, ERP, marketplaces, and internal tools — from early architecture to real users in production.
-            <br/>
-            I’m most effective in environments where engineering decisions are driven by clarity, responsibility, and long-term value rather than short-term fixes.
+            I’m a frontend-first engineer with a strong product mindset.
+            I focus mostly on UI, UX, and how things actually feel for users, while backend and business logic are more like a <Link href="/certificates" className={styles.link}>solid bonus</Link> I bring to the table.<br />
+            <br />
+
+            I’ve worked on <Link href="/projects" className={styles.link}>different products</Link> and also tried building my own things — not all of them worked, but this experience shaped how I think about software, decisions, and trade-offs. I’m more about understanding the problem than just adding features.
+          </p>
+
+        </article>
+        <article>
+          <h2 className={styles.heading} tabIndex={0}>
+            <span className={styles.headingMain}>How I work</span>
+            <span className={styles.headingHelp}>How we would actually collaborate</span>
+          </h2>
+          <p>
+            I usually prefer to think and plan first, then write code.
+            Not everything can be planned, but having a clear direction helps a lot.
+            <br />
+            <br />
+            I care about structure, maintainability, and simple solutions. Feedback is important for me - I work better when I know what’s working and what’s not. In general, I stay focused on the product and try to be easy to work with, even when things are not perfect.
           </p>
         </article>
         <article>
-          <h2>
-            How i work
+          <h2 className={styles.heading} tabIndex={0}>
+            <span className={styles.headingMain}>What I'm open to</span>
+            <span className={styles.headingHelp}>Let’s see if our expectations match</span>
           </h2>
           <p>
-            I approach development as a problem-solving process, not just code delivery.
-            I value clear requirements, thoughtful planning, and open communication — especially early in the process.
-            <br/>
-            I care about maintainability, system design, and real-world constraints. My goal is always the same: deliver solutions that are reliable, understandable, and actually useful to the business.
-          </p>
-        </article>
-        <article>
-          <h2>
-            What I'm open to
-          </h2>
-          <p>
-            At the moment, I’m open to full-time roles, long-term contracts, or well-defined project-based collaboration.
-            I’m particularly interested in work where I can contribute beyond implementation — helping shape architecture, workflows, or technical direction.
-            <br/>
-            If our expectations align, I’m always open to starting a conversation.
+            Right now, I’m open to different formats: full-time roles, long-term contracts, or well-defined projects.
+            What matters more to me is a clear role and a real product, not just “a position”.<br />
+            <br />
+            <br />
+            Ideally, I want to work as part of a team, but I’m also comfortable taking ownership when needed. If the product is interesting and expectations are clear, I’m always open to talk.
           </p>
         </article>
       </div>
+
     </main>
   );
 }

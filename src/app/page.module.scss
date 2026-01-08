@@ -3,7 +3,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   padding-top: 10%;
   align-items: center;
   .main{
@@ -30,6 +30,45 @@
     }
     .linksSection {
       flex: 1;
+    }
+  }
+}
+
+/* Адаптивность */
+
+@media (max-width: 1024px) {
+  .page {
+    padding-top: 6%;
+
+    .main {
+      width: 80%;
+      gap: 20%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    .main {
+      width: 100%;
+      height: auto;
+      gap: 32px;
+
+      .heroTop,
+      .heroBottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .heroBottom {
+        align-items: stretch;
+      }
     }
   }
 }

@@ -6,9 +6,13 @@
     gap: 12px;
     padding: 12px 0;
     z-index: 9999;
+    h1{
+        font-weight: 200;
+        text-transform: uppercase;
+    }
 }
 
-.button{
+.button, .buttonLanguage{
     border: 1px solid rgba(255,255,255,0.2);
     background: transparent;
     color: #fff;
@@ -32,4 +36,8 @@
     &:active{
         transform: translateY(0);
     }
+}
+
+.buttonLanguage{
+
 }
