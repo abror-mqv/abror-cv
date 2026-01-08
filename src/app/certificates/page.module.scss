@@ -264,3 +264,23 @@
     color: #8c92a3;
     font-size: 0.9rem;
 }
+
+
+@media screen and (max-width: 770px) {
+    .main{
+        padding-bottom: 84px;
+    }
+    .board{
+        padding: 0;
+
+    }
+    .widget{
+        bottom: 24px;   
+        width: fit-content;
+        max-width: 94%;
+    }
+    .widgetToggle:hover{
+        background: #0a0a0a;
+        
+    }
+}

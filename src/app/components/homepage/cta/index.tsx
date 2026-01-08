@@ -16,15 +16,14 @@ export default function CTA() {
           aria-label="Get in touch"
           onClick={() => setOpen(true)}
         >
-          Work With Me <br />
-          Get in Touch <br />
-          Contact Me <br />
-          Reach Out <br />
-          Hire Me → <br />
+          <span className={styles.ctaWork}>Work With Me <br /></span>
+          <span className={styles.ctaMain}>Get in Touch <br /></span>
+          <span className={styles.ctaContact}>Contact Me <br /></span>
+          <span className={styles.ctaReach}>Reach Out <br /></span>
+          <span className={styles.ctaHire}>Hire Me → <br /></span>
         </button>
       </div>
       <ContactModal open={open} onClose={() => setOpen(false)} />
     </>
   );
 }
-

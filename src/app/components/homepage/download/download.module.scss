@@ -38,3 +38,16 @@
         }
     }
 }
+
+@media (max-width: 900px) {
+    .download{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .downloadButton {
+        width: 100%;
+        justify-content: center;
+    }
+}

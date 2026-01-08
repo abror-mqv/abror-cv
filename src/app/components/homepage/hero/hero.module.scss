@@ -27,3 +27,17 @@
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    & h1 {
+      font-size: 2rem;
+      // font-weight: 200;
+      // opacity: 0.5;
+    }
+    & h2 {
+      font-size: 1.5rem;
+      opacity: 0.5;
+    }
+  }
+}

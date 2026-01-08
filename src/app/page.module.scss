@@ -6,6 +6,9 @@
   justify-content: flex-start;
   padding-top: 10%;
   align-items: center;
+  .heroTopDivider{
+    display: none;
+  }
   .main{
 
     display: flex;
@@ -49,25 +52,62 @@
 
 @media (max-width: 768px) {
   .page {
-    height: auto;
+    .heroTopDivider{
+      display: block;
+    }
+    // background: red;
     min-height: 100vh;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // flex-direction: column-reverse;
     .main {
+      display: block;
       width: 100%;
-      height: auto;
       gap: 32px;
-
+      // background: blue;
+      height: calc(100% - 70px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-direction: column-reverse;
+      
       .heroTop,
       .heroBottom {
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
       }
+      .heroTop{
+        height: -webkit-fill-available;
+        display: flex;
+        flex-direction: column-reverse;  
+        justify-content: space-between;
+      }
+      .heroBottom { align-items: stretch; }
 
+    
+      .heroTop {
+        order: 1;
+        width: 100%;
+      }
       .heroBottom {
-        align-items: stretch;
+        order: 2;
+        width: 100%;
+      }
+      /* переставляем только саму кнопку в heroTop */
+      .cta {
+        order: 2;
+        width: 100%;
+        margin-top: 18px;
+      }
+      /* Hero остаётся первым элементом внутри heroTop */
+      .heroTop > :first-child {
+        order: 1;
+      }
+      .heroTop > :last-child {
+        order: 2;
       }
     }
   }

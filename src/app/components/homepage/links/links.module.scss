@@ -44,3 +44,25 @@
     font-weight: bold;
     text-shadow: 0 0 16px rgba(41,147,80,0.45);
 }
+
+@media (max-width: 768px) {
+  .links {
+    width: 100%;
+    // box-shadow: 4px 6px 0 var(--accent-color);
+    padding:  16px 0;
+    box-shadow: none;
+    border: none;
+    transform: rotate(0deg) skew(-0deg);
+  }
+
+  .links li a {
+    font-size: 0.95rem;
+    letter-spacing: 0.06em;
+  }
+  .links li + li{
+    border-top: 0px dashed rgba(255,255,255,0.2);
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+}

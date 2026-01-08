@@ -10,14 +10,15 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-          <div className={styles.heroTop}>
-            <Hero />
-            <CTA/>
-          </div>          
-          <div className={styles.heroBottom}>
-            <Links />   
-            <Download />
-          </div>                 
+        <div className={styles.heroTop}>
+          <Hero />
+          <CTA />
+          <div className={styles.heroTopDivider}></div>
+        </div>
+        <div className={styles.heroBottom}>
+          <Links />
+          <Download />
+        </div>
       </main>
       <Quote />
     </div>

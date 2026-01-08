@@ -33,30 +33,24 @@
     }
 }
 
-// .ctaButton{
-//     display: inline-flex;
-//     align-items: center;
-//     justify-content: center;
-//     padding: 14px 24px;
-//     border-radius: 10px;
-//     border: 2px solid #0a0a0a;
-//     background: var(--accent-color);
-//     color: #0a0a0a;
-//     font-weight: 700;
-//     font-size: 1rem;
-//     letter-spacing: 0.08em;
-//     text-transform: uppercase;
-//     box-shadow: 6px 10px 0 #0a0a0a;
-//     transform: skew(-2deg);
-//     transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease;
-//     &:hover{
-//         transform: skew(-2deg) translateY(-2px) rotate(-0.6deg);
-//         filter: brightness(1.05);
-//         box-shadow: 8px 14px 0 #0a0a0a;
-//     }
-//     &:active{
-//         transform: skew(-1deg) translateY(1px) rotate(0deg);
-//         box-shadow: 4px 8px 0 #0a0a0a;
-//     }
-// }
-
+@media (max-width: 768px) {
+  .cta {
+    justify-content: flex-start;
+    width: 100%;
+    .ctaButton {
+      width: 100%;
+      padding: 14px 18px;
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      box-shadow: 4px -6px 0 var(--accent-color), 0 0 12px rgba(41,147,80,0.22);
+      transform: rotate(0deg) skew(-1deg);
+      text-align: center;
+    }
+    .ctaWork, .ctaContact, .ctaReach, .ctaHire {
+      display: none !important;
+    }
+    .ctaMain {
+      display: inline !important;
+    }
+  }
+}
