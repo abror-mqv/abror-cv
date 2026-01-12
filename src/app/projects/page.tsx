@@ -64,7 +64,6 @@ export default function ProjectsPage() {
               direction="vertical"
               loop
               slidesPerView="auto"
-              // spaceBetween={80}
               centeredSlides
               effect="coverflow"
               coverflowEffect={{
@@ -75,6 +74,7 @@ export default function ProjectsPage() {
                 slideShadows: true,
               }}
               mousewheel={false}
+              spaceBetween={0}
               onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
               onSwiper={(swiper) => {
                 swiperRef.current = swiper;
