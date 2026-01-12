@@ -206,11 +206,30 @@
 }
 
 @media (max-width: 820px){
+    .container{
+        grid-template-columns: none;
+        padding-bottom: 60px;
+    }
     .card{
         grid-template-columns: 1fr;
         .card_date{
             align-items: flex-start;
             text-align: left;
+            div{
+                flex-direction: row;
+                gap: 12px;
+                p{
+                    width: max-content;
+                }
+            }
         }
     }
+    .explainer{
+        display: none;
+        .axis{
+            position: absolute;
+            display: none;
+        }
+    }
+    
 }

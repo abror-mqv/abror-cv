@@ -22,6 +22,12 @@
     }
 }
 
+@media (max-width: 800px) {
+    .quote{
+        display: none;
+    }
+}
+
 // @media (max-width: 768px) {
 //     .quote {
 //         position: static;
