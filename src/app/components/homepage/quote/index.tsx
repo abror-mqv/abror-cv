@@ -1,10 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import quotes from './quotes.json';
+import { useLocale } from 'next-intl';
+import { type Locale } from '../../../../i18n/config';
 import styles from './quote.module.scss';
 
-const BASE_TYPING_SPEED = 25;
+const BASE_TYPING_SPEED = 5;
 const PAUSE_AFTER_TYPED = 1000;
 const CURSOR_BLINK = 550;
 const PUNCTUATION_PAUSE = 220;
@@ -17,6 +18,8 @@ const TYPO_CHANCE = 0.08;
 const BACKSPACE_DELAY = 120;
 
 export default function Quote() {
+  const locale = useLocale() as Locale;
+  const [quotes, setQuotes] = useState<Array<{ quote: string; author: string }>>([]);
   const [quoteIndex, setQuoteIndex] = useState(0);
   const [quoteText, setQuoteText] = useState('');
   const [authorText, setAuthorText] = useState('');
@@ -28,7 +31,29 @@ export default function Quote() {
     target: 'quote' | 'author' | null;
   }>({ active: false, phase: null, target: null });
 
-  const currentQuote = quotes[quoteIndex];
+  // Load quotes based on locale
+  useEffect(() => {
+    const loadQuotes = async () => {
+      try {
+        const quotesModule = await import(`./quotes/${locale}.json`);
+        setQuotes(quotesModule.default);
+      } catch (error) {
+        console.error(`Failed to load quotes for locale ${locale}:`, error);
+        // Fallback to English if locale file doesn't exist
+        try {
+          const fallbackQuotes = await import('./quotes/en.json');
+          setQuotes(fallbackQuotes.default);
+        } catch (fallbackError) {
+          console.error('Failed to load fallback quotes:', fallbackError);
+          setQuotes([]);
+        }
+      }
+    };
+
+    loadQuotes();
+  }, [locale]);
+
+  const currentQuote = quotes[quoteIndex] || { quote: '', author: '' };
 
   const nextDelay = (fullText: string, currentLength: number) => {
     const nextChar = fullText[currentLength];
@@ -51,7 +76,16 @@ export default function Quote() {
   };
 
   const randomWrongChar = (correct: string) => {
-    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    // Use different alphabets based on locale
+    let alphabet: string;
+    if (locale === 'ru') {
+      alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
+    } else if (locale === 'fr') {
+      alphabet = 'abcdefghijklmnopqrstuvwxyzàâäçéèêëïîôöùûüÿ';
+    } else {
+      alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    }
+    
     let candidate = alphabet[Math.floor(Math.random() * alphabet.length)];
     if (candidate === correct.toLowerCase()) {
       candidate = alphabet[(alphabet.indexOf(candidate) + 1) % alphabet.length];
@@ -60,6 +94,9 @@ export default function Quote() {
   };
 
   useEffect(() => {
+    // Don't start typing animation until quotes are loaded
+    if (quotes.length === 0) return;
+
     const fullQuote = currentQuote.quote;
     const fullAuthor = `- ${currentQuote.author}`;
     const targetStage = stage === 'quote' ? 'quote' : stage === 'author' ? 'author' : null;
@@ -128,6 +165,7 @@ export default function Quote() {
 
     return () => clearTimeout(timer);
   }, [
+    quotes.length,
     authorText.length,
     currentQuote.author,
     currentQuote.quote,

@@ -1,0 +1,10 @@
+{
+  "title": "my Tech Stack",
+  "certifications": "Certifications",
+  "coming_soon": "Coming soon",
+  "view": "View",
+  "widget": {
+    "toggle": "How rates are estimated?",
+    "explanation": "My strongest stack is React, which I set at 100/100.\nEvery other technology is scored relative to that benchmark: how deeply I know it, how many real projects I've shipped with it, and how confidently I can solve typical production tasks. A 100 does not mean \"perfect at everything\" - it just marks my personal ceiling today.\nLower scores show how much less experienced I am with that tech compared to my React baseline."
+  }
+}

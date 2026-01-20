@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import projectsData from './data/projects.json';
 import Header from '../components/header';
 import styles from './projects.module.scss';
@@ -13,9 +14,11 @@ import 'swiper/css/effect-coverflow';
 import Info from './components/Info';
 
 export default function ProjectsPage() {
+  const t = useTranslations('projects');
   const [activeIndex, setActiveIndex] = useState(0);
   const [isReady, setIsReady] = useState(false);
   const currentProject = projectsData[activeIndex];
+  const currentProjectData = t.raw('projects')[activeIndex];
   const swiperRef = useRef<SwiperType | null>(null);
   const scrollThreshold = 12; 
 
@@ -47,11 +50,11 @@ export default function ProjectsPage() {
 
   return (
     <div className={styles.page}>
-      <Header title="Projects" />
+      <Header title={t('title')} />
       <main className={styles.main} onWheel={handleWheel}>
         
         <div className={styles.content}>
-          <Info data={currentProject}/>
+          <Info data={{...currentProject, ...currentProjectData}}/>
          
           <div className={styles.swiperWrap}>
             {!isReady ? (

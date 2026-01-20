@@ -1,0 +1,10 @@
+{
+  "title": "Mon stack technique",
+  "certifications": "Certifications",
+  "coming_soon": "Bientôt disponible",
+  "view": "Voir",
+  "widget": {
+    "toggle": "Comment les niveaux sont-ils estimés ?",
+    "explanation": "Mon stack le plus fort est React, que j'évalue à 100/100.\nToutes les autres technologies sont notées par rapport à ce benchmark : à quel point je les connais profondément, combien de projets réels j'ai livrés avec elles, et à quel point je peux résoudre les tâches de production typiques. Un 100 ne signifie pas \"parfait en tout\" - cela marque simplement mon plafond personnel aujourd'hui.\nLes scores plus bas montrent à quel point j'ai moins d'expérience avec cette technologie par rapport à ma base React."
+  }
+}

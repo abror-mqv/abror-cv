@@ -1,0 +1,22 @@
+{
+  "title": "À propos de moi",
+  "who_i_am": {
+    "main": "Qui je suis",
+    "help": "J'ai oublié de me présenter",
+    "content": "Je suis un ingénieur frontend-first avec une forte mentalité produit.\nJe me concentre principalement sur l'UI, l'UX et la façon dont les choses se sentent réellement pour les utilisateurs, tandis que le backend et la logique métier sont plus comme un __solid_bonus__ que j'apporte.\n\nJ'ai travaillé sur __different_products__ et j'ai aussi essayé de construire mes propres choses - pas toutes ont fonctionné, mais cette expérience a façonné ma façon de penser au logiciel, aux décisions et aux compromis. Je suis plus intéressé par la compréhension du problème que par l'ajout de fonctionnalités."
+  },
+  "how_i_work": {
+    "main": "Comment je travaille",
+    "help": "Comment nous collaborerions réellement",
+    "content": "Je préfère généralement penser et planifier d'abord, puis écrire du code.\nTout ne peut pas être planifié, mais avoir une direction claire aide beaucoup.\n\nJe me soucie de la structure, de la maintenabilité et des solutions simples. Le feedback est important pour moi - je travaille mieux quand je sais ce qui fonctionne et ce qui ne fonctionne pas. En général, je reste concentré sur le produit et j'essaie d'être facile à travailler avec, même quand les choses ne sont pas parfaites."
+  },
+  "what_im_open_to": {
+    "main": "Ce à quoi je suis ouvert",
+    "help": "Voyons si nos attentes correspondent",
+    "content": "Actuellement, je suis ouvert à différents formats : rôles à temps plein, contrats à long terme ou projets bien définis.\nCe qui compte plus pour moi, c'est un rôle clair et un vrai produit, pas juste \"une position\".\n\nIdéalement, je veux travailler en équipe, mais je suis aussi à l'aise pour prendre la responsabilité quand c'est nécessaire. Si le produit est intéressant et les attentes sont claires, je suis toujours ouvert à discuter."
+  },
+  "links": {
+    "solid_bonus": "bonus solide",
+    "different_products": "différents produits"
+  }
+}

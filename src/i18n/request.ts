@@ -16,11 +16,25 @@ export default getRequestConfig(async ({ locale }) => {
   }
 
   const homepageMessages = (await import(`./messages/${validLocale}/homepage.json`)).default;
+  const certificatesMessages = (await import(`./messages/${validLocale}/certificates.json`)).default;
+  const projectsMessages = (await import(`./messages/${validLocale}/projects.json`)).default;
+  const headerMessages = (await import(`./messages/${validLocale}/header.json`)).default;
+  const contactModalMessages = (await import(`./messages/${validLocale}/contact_modal.json`)).default;
+  const expectationsMessages = (await import(`./messages/${validLocale}/expectations.json`)).default;
+  const timelineMessages = (await import(`./messages/${validLocale}/timeline.json`)).default;
+  const timelineContentMessages = (await import(`./messages/${validLocale}/timeline_content.json`)).default;
 
   return {
     locale: validLocale,
     messages: {
       homepage: homepageMessages,
+      certificates: certificatesMessages,
+      projects: projectsMessages,
+      header: headerMessages,
+      contact_modal: contactModalMessages,
+      expectations: expectationsMessages,
+      timeline: timelineMessages,
+      timeline_content: timelineContentMessages,
     },
   };
 });

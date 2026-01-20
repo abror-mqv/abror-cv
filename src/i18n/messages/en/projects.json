@@ -1,0 +1,56 @@
+{
+  "title": "Projects",
+  "info": {
+    "kicker": "Case in focus",
+    "open_source": "Open Source",
+    "live_demo": "Live demo",
+    "github": "GitHub"
+  },
+  "projects": [
+    {
+      "title": "optal.ru",
+      "description": "Local marketplace i took as a startup project but it didnt work out. The goal was to create a platform for Kyrgyz sewing manufacturers to sell their products to CIS market",
+      "role": "Full Stack Developer/Owner"
+    },
+    {
+      "title": "imacode.ru",
+      "description": "Single-paged application for a local programming school.",
+      "role": "Frontend Developer"
+    },
+    {
+      "title": "aimak-admin",
+      "description": "Admin panel for a local company to manage ads users and orders",
+      "role": "Full Stack Developer/Owner"
+    },
+    {
+      "title": "aimak-web",
+      "description": "Website for a local company. The main goal was just to pass AppStore requirements for our apps",
+      "role": "Frontend Developer"
+    },
+    {
+      "title": "Nookat 996",
+      "description": "Local e-bay alternative for Kyrgyzstan. Yeah i developed it all by myself using Flutter, Django Rest Framework and React as a admin-panel. You can download it rn",
+      "role": "Mobile Developer/Owner"
+    },
+    {
+      "title": "AZV-Coffee",
+      "description": "The loyalty app for a coffeshop that did not work out. It is not available in app store or google play but i can drop you .apk file. I was just playing with flutter",
+      "role": "Mobile Developer/Owner"
+    },
+    {
+      "title": "AZV-Web-Admin",
+      "description": "The admin panel for loyalty app for a coffeshop that did not work out. Now it is a free template if you want to create your white-label loyalty app",
+      "role": "Full Stack Developer/Owner"
+    },
+    {
+      "title": "AGK-Media",
+      "description": "The website of company i've been working with that does marketing in Russia",
+      "role": "Frontend Developer"
+    },
+    {
+      "title": "Imagocos",
+      "description": "The website of company i've been working with that does custom software development in CIS region",
+      "role": "Frontend Developer"
+    }
+  ]
+}

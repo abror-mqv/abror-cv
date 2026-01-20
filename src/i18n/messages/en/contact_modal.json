@@ -1,0 +1,22 @@
+{
+  "youre_welcome": "You're welcome",
+  "before_we_talk": "Before we talk",
+  "quick_sanity_check": "a quick sanity check",
+  "proceed": "Proceed",
+  "subtitle": "This helps filter serious opportunities and saves time on both sides.",
+  "my_direct_lines": "my direct lines",
+  "telegram": "Telegram",
+  "direct_me": "Direct me",
+  "email": "Email",
+  "open_mail_app": "Open mail app",
+  "copy": "Copy",
+  "copied": "Copied",
+  "email_copied": "Email copied to clipboard",
+  "linkedin": "LinkedIn",
+  "lets_connect": "Let's connect",
+  "checks": [
+    "I represent a real company or end client (not a third-party \"urgent opportunity\").",
+    "This is not a crypto / NFT / \"next big thing\" without a product.",
+    "I have a real budget and timeline for project ."
+  ]
+}

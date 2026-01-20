@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import certsData from './data/certs.json';
 import stackData from './data/stack.json';
 import Header from '../components/header';
@@ -22,12 +23,13 @@ type StackBlock = {
 };
 
 export default function CertificatesPage() {
+  const t = useTranslations('certificates');
   const certificates = (certsData as { certificates: Certificate[] }).certificates;
   const blocks = (stackData as { blocks: StackBlock[] }).blocks;
 
   return (
     <div className={styles.page}>
-      <Header title="my Tech Stack" />
+      <Header title={t('title')} />
       <main className={styles.main}>
         <section className={styles.board}>
           <div className={styles.stackGrid}>
@@ -36,7 +38,7 @@ export default function CertificatesPage() {
                 <div className={styles.blockHeader}>{block.tile}</div>
                 <div className={styles.mains}>
                   {block.mains.length === 0 ? (
-                    <p className={styles.empty}>Coming soon</p>
+                    <p className={styles.empty}>{t('coming_soon')}</p>
                   ) : (
                     block.mains.map((item, idxItem) => (
                       <div key={item.name} className={styles.mainItem}>
@@ -60,7 +62,7 @@ export default function CertificatesPage() {
                 </div>
                 <div className={styles.subs}>
                   {block.subs.length === 0 ? (
-                    <p className={styles.empty}>—</p>
+                    <p className={styles.empty}>-</p>
                   ) : (
                     block.subs.map((sub) => (
                       <span key={sub} className={styles.tag}>
@@ -75,7 +77,7 @@ export default function CertificatesPage() {
         </section>
 
         <section className={styles.board}>
-          <h1 className={styles.title}>Certifications</h1>
+          <h1 className={styles.title}>{t('certifications')}</h1>
           <ul className={styles.certs}>
             {certificates.map((cert) => (
               <li key={cert.id} className={styles.certItem}>
@@ -87,7 +89,7 @@ export default function CertificatesPage() {
                   <span className={styles.certDate}>{cert.date}</span>
                   {cert.status ? <span className={styles.status}>{cert.status}</span> : null}
                   <a href={cert.url} target="_blank" rel="noreferrer" className={styles.link}>
-                    View
+                    {t('view')}
                   </a>
                 </div>
               </li>

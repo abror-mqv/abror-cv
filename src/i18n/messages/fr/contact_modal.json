@@ -1,0 +1,22 @@
+{
+  "youre_welcome": "Bienvenue",
+  "before_we_talk": "Avant de parler",
+  "quick_sanity_check": "une petite vérification",
+  "proceed": "Continuer",
+  "subtitle": "Cela aide à filtrer les opportunités sérieuses et fait gagner du temps des deux côtés.",
+  "my_direct_lines": "mes contacts directs",
+  "telegram": "Telegram",
+  "direct_me": "Me contacter",
+  "email": "Email",
+  "open_mail_app": "Ouvrir l'app mail",
+  "copy": "Copier",
+  "copied": "Copié",
+  "email_copied": "Email copié dans le presse-papiers",
+  "linkedin": "LinkedIn",
+  "lets_connect": "Connectons-nous",
+  "checks": [
+    "Je représente une vraie entreprise ou un client final (pas un tiers avec \"opportunité urgente\").",
+    "Ce n'est pas une crypto / NFT / \"prochaine grande chose\" sans produit.",
+    "J'ai un vrai budget et un calendrier pour le projet."
+  ]
+}

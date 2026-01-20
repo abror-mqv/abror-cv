@@ -1,0 +1,69 @@
+{
+  "timeline": [
+    {
+      "my_role": "Étudiant",
+      "employer_title": "IT-Academy Kyrgyzstan",
+      "employer_description": "Cours IT certifiés basés à Bichkek, Kirghizistan",
+      "my_responsbilities": [
+        "Accompli des cours de développement web utilisant React",
+        "A assisté le mentor dans la conduite de sessions de laboratoire et la réponse aux questions des étudiants"
+      ],
+      "date_start": "Mars, 2021",
+      "date_end": "Déc, 2021",
+      "date_sum": "9 mois"
+    },
+    {
+      "my_role": "Développeur Frontend",
+      "employer_title": "ZettaSoft.io",
+      "employer_description": "Entreprise locale de développement de logiciels axée sur les applications web et mobiles.",
+      "my_responsbilities": [
+        "A assisté au développement d'applications web réactives utilisant React",
+        "A collaboré avec des développeurs seniors pour déboguer et corriger les problèmes frontend.",
+        "A appris à travailler avec redux et next.js"
+      ],
+      "date_start": "Déc, 2021",
+      "date_end": "Mai, 2022",
+      "date_sum": "5 mois"
+    },
+    {
+      "my_role": "Développeur Frontend",
+      "employer_title": "AGK-Media",
+      "employer_description": "Agence de marketing basée en Russie",
+      "my_responsbilities": [
+        "J'ai construit des applications web d'une seule page pour nous et nos clients",
+        "J'ai intégré la gestion de contenu en utilisant wordpress"
+      ],
+      "date_start": "Mai, 2022",
+      "date_end": "Déc, 2022",
+      "date_sum": "8 mois"
+    },
+    {
+      "my_role": "Administrateur Système / Support IT",
+      "employer_title": "Freelance",
+      "employer_description": "A fourni l'administration système et le support IT pour plusieurs entreprises (centres d'appel, entrepôts, usines) à Bichkek.",
+      "my_responsbilities": [
+        "Ce travail m'a aidé à comprendre quel type de logiciel est vraiment nécessaire dans les petites entreprises",
+        "Installé et entretenu des postes de travail et l'infrastructure IT de bureau",
+        "Déployé et configuré des systèmes CRM",
+        "Formé le personnel et fourni un support technique continu",
+        "A soutenu des clients dans diverses industries (centres d'appel, entrepôts, fabrication)"
+      ],
+      "date_start": "Mars, 2023",
+      "date_end": "Fév, 2025",
+      "date_sum": "23 mois"
+    },
+    {
+      "my_role": "Développeur FullStack",
+      "employer_title": "Imagocos",
+      "employer_description": "Entreprise d'externalisation de logiciels personnalisés basée à Bichkek, Kirghizistan",
+      "my_responsbilities": [
+        "Développé des applications web full-stack utilisant React, Django et Postgres",
+        "Implémenté des API RESTful et intégré des services tiers",
+        "A assisté nos analystes métier à comprendre les contraintes et possibilités techniques"
+      ],
+      "date_start": "Mars, 2025",
+      "date_end": "Déc, 2025",
+      "date_sum": "10 mois"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "title": "About me",
+  "who_i_am": {
+    "main": "Who I am",
+    "help": "I forgot to introduce myself",
+    "content": "I'm a frontend-first engineer with a strong product mindset.\nI focus mostly on UI, UX, and how things actually feel for users, while backend and business logic are more like a __solid_bonus__ I bring to the table.\n\nI've worked on __different_products__ and also tried building my own things - not all of them worked, but this experience shaped how I think about software, decisions, and trade-offs. I'm more about understanding the problem than just adding features."
+  },
+  "how_i_work": {
+    "main": "How I work",
+    "help": "How we would actually collaborate",
+    "content": "I usually prefer to think and plan first, then write code.\nNot everything can be planned, but having a clear direction helps a lot.\n\nI care about structure, maintainability, and simple solutions. Feedback is important for me - I work better when I know what's working and what's not. In general, I stay focused on product and try to be easy to work with, even when things are not perfect."
+  },
+  "what_im_open_to": {
+    "main": "What I'm open to",
+    "help": "Let's see if our expectations match",
+    "content": "Right now, I'm open to different formats: full-time roles, long-term contracts, or well-defined projects.\nWhat matters more to me is a clear role and a real product, not just \"a position\".\n\nIdeally, I want to work as part of a team, but I'm also comfortable taking ownership when needed. If product is interesting and expectations are clear, I'm always open to talk."
+  },
+  "links": {
+    "solid_bonus": "solid bonus",
+    "different_products": "different products"
+  }
+}

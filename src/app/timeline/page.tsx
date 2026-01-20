@@ -1,13 +1,15 @@
 'use client'
 
+import { useTranslations } from 'next-intl';
 import Header from '../components/header';
 import { useMemo, useState } from 'react';
 import styles from './Timeline.module.scss';
 import Card from './components/Card';
-import timeline from './data/timeline.json';
 
 export default function TimelinePage() {
-  const items = useMemo(() => [...timeline].reverse(), []);
+  const t = useTranslations('timeline');
+  const timelineData = useTranslations('timeline_content');
+  const items = useMemo(() => [...timelineData.raw('timeline')].reverse(), []);
   const [showAll, setShowAll] = useState(false);
   const initialCount = 2;
   const visible = showAll ? items : items.slice(0, initialCount);
@@ -15,13 +17,13 @@ export default function TimelinePage() {
 
   return (
     <main className={styles.page}>
-      <Header title="Experience Timeline" />
+      <Header title={t('title')} />
       <div className={styles.container}>
         <div className={styles.explainer}>
           <div className={styles.axis}>
-            <span className={styles.axisLabel}>Recent</span>
+            <span className={styles.axisLabel}>{t('recent')}</span>
             <div className={styles.axisLine} />
-            <span className={styles.axisLabelMuted}>Earlier</span>
+            <span className={styles.axisLabelMuted}>{t('earlier')}</span>
           </div>
 
         </div>
@@ -34,7 +36,7 @@ export default function TimelinePage() {
           {hasMore ? (
             <div className={styles.controls}>
               <button className={styles.showMore} onClick={() => setShowAll(true)}>
-                Show all
+                {t('show_all')}
               </button>
             </div>
           ) : null}

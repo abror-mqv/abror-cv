@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import checks from './data/check.json';
+import { useTranslations } from 'next-intl';
 import styles from './contact_modal.module.scss';
 import Image from 'next/image';
 
@@ -11,12 +11,15 @@ type Props = {
 };
 
 export default function ContactModal({ open, onClose }: Props) {
-    const [checked, setChecked] = useState<boolean[]>(() => checks.map(() => false));
     const [showContacts, setShowContacts] = useState(false);
     const [copied, setCopied] = useState(false);
+    const t = useTranslations('contact_modal');
+    const checks = t.raw('checks');
+    const [checked, setChecked] = useState<boolean[]>(() => checks.map(() => false));
+
 
     const allChecked = useMemo(() => checked.every(Boolean), [checked]);
-    const headerLabel = showContacts ? "You're welcome" : 'Before we talk';
+    const headerLabel = showContacts ? t('youre_welcome') : t('before_we_talk');
 
     useEffect(() => {
         if (!open) {
@@ -24,7 +27,7 @@ export default function ContactModal({ open, onClose }: Props) {
             setShowContacts(false);
             setCopied(false);
         }
-    }, [open]);
+    }, [open, checks]);
 
     const toggle = (idx: number) => {
         setChecked((prev) => {
@@ -56,9 +59,9 @@ export default function ContactModal({ open, onClose }: Props) {
 
                 {!showContacts ? (
                     <div className={styles.content}>
-                        <p className={styles.title}>a quick sanity check</p>
+                        <p className={styles.title}>{t('quick_sanity_check')}</p>
                         <ul className={styles.checklist}>
-                            {checks.map((item, idx) => (
+                            {checks.map((item: string, idx: number) => (
                                 <li key={item} onClick={() => toggle(idx)}>
                                     <label className={styles.checkbox}>
                                         <input
@@ -78,45 +81,45 @@ export default function ContactModal({ open, onClose }: Props) {
                             disabled={!allChecked}
                             onClick={() => setShowContacts(true)}
                         >
-                            Proceed
+                            {t('proceed')}
                         </button>
-                        <p className={styles.subtitle}>This helps filter serious opportunities and saves time on both sides.</p>
+                        <p className={styles.subtitle}>{t('subtitle')}</p>
 
                     </div>
                 ) : (
                     <div className={`${styles.content} ${styles.contacts}`}>
-                        <p className={styles.title}>my direct lines</p>
+                        <p className={styles.title}>{t('my_direct_lines')}</p>
                         <div className={styles.links}>
                             <div className={styles.rowSingle}>
                                 <a className={styles.contactCard} href="https://t.me/abror_mqv" target="_blank" rel="noreferrer" >
                                     <Image src="/telegram.png" alt="Telegram" width={24} height={24} />
-                                    <span className={styles.cardTitle}>Telegram</span>
-                                    <p>Direct me</p>
+                                    <span className={styles.cardTitle}>{t('telegram')}</span>
+                                    <p>{t('direct_me')}</p>
                                 </a>
                                 <div className={styles.contactCard}>
                                     <div className={styles.mailLine}>
                                         <Image src="/mail.png" alt="Email" width={24} height={24} />
-                                        <span className={styles.cardTitle}>Email</span>
+                                        <span className={styles.cardTitle}>{t('email')}</span>
                                     </div>
                                     <p>mmtklvabrr@gmail.com</p>
                                     <div className={styles.copyRow}>
-                                        <a href={`mailto:mmtklvabrr@gmail.com`}>Open mail app</a>
+                                        <a href={`mailto:mmtklvabrr@gmail.com`}>{t('open_mail_app')}</a>
                                         <button
                                             type="button"
                                             className={styles.copyBtn}
                                             onClick={() => handleCopy('mmtklvabrr@gmail.com')}
                                         >
-                                            {copied ? 'Copied' : 'Copy'}
+                                            {copied ? t('copied') : t('copy')}
                                         </button>
                                     </div>
                                     <span className={styles.copyStatus} aria-live="polite">
-                                        {copied ? 'Email copied to clipboard' : ''}
+                                        {copied ? t('email_copied') : ''}
                                     </span>
                                 </div>
                                 <a className={styles.contactCard} href="https://www.linkedin.com/in/abror-mqv" target="_blank" rel="noreferrer">
                                     <Image src="/linkedin.png" alt="LinkedIn" width={24} height={24} />
-                                    <span className={styles.cardTitle}>LinkedIn</span>
-                                    <p>Let’s connect</p>
+                                    <span className={styles.cardTitle}>{t('linkedin')}</span>
+                                    <p>{t('lets_connect')}</p>
                                 </a>
                             </div>
                         </div>

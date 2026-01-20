@@ -1,9 +1,9 @@
 {
   "links": {
-    "projects": "Что я <accent>делал</accent>",
+    "projects": "Что я <accent>разработал</accent>",
     "timeline": "Где я <accent>работал</accent>",
     "certificates": "Мой <accent>стек</accent> и сертификации",
-    "expectations": "Чего я <accent>жду</accent> от сотрудничества"
+    "expectations": "Чего я <accent>ожидаю</accent>"
   },
   "hero": {
     "name": "Аброр Маматкулов",

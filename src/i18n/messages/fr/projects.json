@@ -1,0 +1,56 @@
+{
+  "title": "Projets",
+  "info": {
+    "kicker": "Projet en focus",
+    "open_source": "Open Source",
+    "live_demo": "Démo",
+    "github": "GitHub"
+  },
+  "projects": [
+    {
+      "title": "optal.ru",
+      "description": "Marketplace local que j'ai pris comme projet de startup mais qui n'a pas fonctionné. L'objectif était de créer une plateforme pour les fabricants de couture kirghizes pour vendre leurs produits sur le marché de la CEI",
+      "role": "Développeur Full Stack/Propriétaire"
+    },
+    {
+      "title": "imacode.ru",
+      "description": "Application monopage pour une école de programmation locale.",
+      "role": "Développeur Frontend"
+    },
+    {
+      "title": "aimak-admin",
+      "description": "Panneau d'administration pour une entreprise locale pour gérer les publicités, utilisateurs et commandes",
+      "role": "Développeur Full Stack/Propriétaire"
+    },
+    {
+      "title": "aimak-web",
+      "description": "Site web pour une entreprise locale. L'objectif principal était juste de passer les exigences de l'AppStore pour nos applications",
+      "role": "Développeur Frontend"
+    },
+    {
+      "title": "Nookat 996",
+      "description": "Alternative locale à e-bay pour le Kirghizistan. Oui, je l'ai développé entièrement moi-même en utilisant Flutter, Django Rest Framework et React comme panneau d'administration. Vous pouvez le télécharger maintenant",
+      "role": "Développeur Mobile/Propriétaire"
+    },
+    {
+      "title": "AZV-Coffee",
+      "description": "Application de fidélité pour un café qui n'a pas fonctionné. Elle n'est pas disponible dans l'app store ou google play mais je peux vous envoyer le fichier .apk. Je jouais juste avec flutter",
+      "role": "Développeur Mobile/Propriétaire"
+    },
+    {
+      "title": "AZV-Web-Admin",
+      "description": "Panneau d'administration pour l'application de fidélité d'un café qui n'a pas fonctionné. Maintenant c'est un modèle gratuit si vous voulez créer votre application de fidélité en marque blanche",
+      "role": "Développeur Full Stack/Propriétaire"
+    },
+    {
+      "title": "AGK-Media",
+      "description": "Site web de l'entreprise avec laquelle j'ai travaillé qui fait du marketing en Russie",
+      "role": "Développeur Frontend"
+    },
+    {
+      "title": "Imagocos",
+      "description": "Site web de l'entreprise avec laquelle j'ai travaillé qui fait du développement de logiciels personnalisés dans la région de la CEI",
+      "role": "Développeur Frontend"
+    }
+  ]
+}
