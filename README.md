@@ -10,5 +10,4 @@ Built with Next.js v16 and TypeScript.
  - make pdf file downloadable
  - customize fonts
  - add SEO optimization
- - add contact form
- - add project showcase
+ - make ui more cyber and more punk
