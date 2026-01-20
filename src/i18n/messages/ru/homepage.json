@@ -1,0 +1,21 @@
+{
+  "links": {
+    "projects": "Что я <accent>делал</accent>",
+    "timeline": "Где я <accent>работал</accent>",
+    "certificates": "Мой <accent>стек</accent> и сертификации",
+    "expectations": "Чего я <accent>жду</accent> от сотрудничества"
+  },
+  "hero": {
+    "name": "Аброр Маматкулов",
+    "role_title": "Frontend Разработчик"
+  },
+  "cta": {
+    "work": "Сотрудничество",
+    "main": "Связь",
+    "contact": "Контакты",
+    "reach": "Обсудить проект",
+    "hire": "Нанять →"
+  }
+}
+
+

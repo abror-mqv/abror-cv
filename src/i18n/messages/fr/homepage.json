@@ -1,0 +1,21 @@
+{
+  "links": {
+    "projects": "Ce que j’ai <accent>construit</accent>",
+    "timeline": "Où j’ai <accent>travaillé</accent>",
+    "certificates": "Mon <accent>stack</accent> technique et mes certifications",
+    "expectations": "Ce que j’<accent>attends</accent> d’une collaboration"
+  },
+  "hero": {
+    "name": "Abror Mamatqulov",
+    "role_title": "Développeur Frontend"
+  },
+  "cta": {
+    "work": "Collaboration",
+    "main": "Me contacter",
+    "contact": "Contactez-moi",
+    "reach": "Discuter d'un projet",
+    "hire": "Embauchez-moi →"
+  }
+}
+
+

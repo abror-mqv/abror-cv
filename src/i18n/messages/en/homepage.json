@@ -1,0 +1,19 @@
+{
+  "links": {
+    "projects": "What I've <accent>Built</accent>",
+    "timeline": "Where I've <accent>Worked</accent>",
+    "certificates": "My <accent>Tech Stack</accent> and Certifications",
+    "expectations": "What I <accent>Expect</accent>"
+  },
+  "hero": {
+    "name": "Abror Mamatqulov",
+    "role_title": "Frontend Engineer"
+  },
+  "cta": {
+    "work": "Work With Me",
+    "main": "Get in Touch",
+    "contact": "Contact Me",
+    "reach": "Reach Out",
+    "hire": "Hire Me →"
+  }
+}
