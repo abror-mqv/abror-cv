@@ -1,0 +1,88 @@
+.page {
+    min-height: 100vh;
+    padding: 12px clamp(16px, 4vw, 48px);
+    position: relative;
+}
+
+.main {
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    background: #0a0a0a;
+
+    height: 70vh;
+}
+
+.Meditation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+
+    .ActionActive {
+        border-radius: 200px;
+        overflow: hidden;
+        box-shadow: 0 0 50px rgba(255, 40, 40, 0.4);
+        // filter: hue-rotate(100deg);
+        cursor: pointer;
+        transform: scale(1.02);
+        transition: 0.1s;
+
+        &:active {
+            transform: scale(0.98);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+
+        // filter: saturate(0);
+    }
+
+    .ActionDisabled {
+        border-radius: 200px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        filter: saturate(0);
+        cursor: pointer;
+        transition: 0.1s;
+
+        &:active {
+            transform: scale(0.98);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+    
+    .Timer {
+        .TimerDisplay {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 24px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            
+            .TimeLabel {
+                font-size: 12px;
+                color: rgba(255, 255, 255, 0.6);
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+            }
+            
+            .TimeValue {
+                font-size: 24px;
+                font-weight: 600;
+                color: var(--accent-color);
+                font-family: 'Courier New', monospace;
+                letter-spacing: 0.05em;
+            }
+        }
+    }
+}

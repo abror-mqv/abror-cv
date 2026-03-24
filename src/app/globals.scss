@@ -3,7 +3,7 @@
   --font-color: #ffffff;
   // --accent-color: #299350;
   --accent-color: #42fec2;
-
+  --font-jura: "Jura", sans-serif;
 }
 
 html,
@@ -13,7 +13,8 @@ body {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  // font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jura);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-color);
